@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">🌤️ SkyNow</h1>
+<p align="center">
+  <i>Real-time Weather Forecasts & Alerts</i><br>
+  <b>Accurate • Reliable • Fast</b>
+</p>
 
-## Getting Started
+<p align="center">
+  <a href="https://sky-now-three.vercel.app/">
+    <img src="https://img.shields.io/badge/VISIT%20SITE-0078D7?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Visit Site" />
+  </a>
+  <a href="https://github.com/Ravikumar-2016">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</p>
 
-First, run the development server:
+---
+
+## 🌎 Overview
+**SkyNow** is a modern weather web application that provides **real-time weather forecasts, hourly updates, and 5-day predictions** using data from **OpenWeather API** and **Weather.com API**.  
+It helps users stay informed with **live conditions, temperature trends, and sunrise/sunset timings** in a clean and minimal interface.
+
+---
+
+## ✨ Features
+- 🌤️ **Current Weather** – Real-time temperature, humidity, pressure & wind data  
+- 📅 **5-Day Forecast** – Extended outlook with accurate daily trends  
+- 🕒 **24-Hour Forecast** – Hour-by-hour weather predictions  
+- 🌅 **Sunrise & Sunset Timings** – For any city worldwide  
+- 🧭 **Location-based Search** – Search instantly by city name  
+- 🧩 **Responsive Design** – Works seamlessly across devices  
+
+---
+
+## 🚀 Live Demo
+👉 [**Visit SkyNow**](https://sky-now-three.vercel.app/)  
+Experience real-time forecasts and alerts directly in your browser.
+
+---
+
+## 🧠 Tech Stack
+| Category | Technologies Used |
+|-----------|-------------------|
+| **Frontend** | Next.js (TypeScript), React, CSS |
+| **API** | OpenWeatherMap API, Weather.com API |
+| **Styling** | Tailwind CSS |
+| **Hosting** | Vercel |
+| **Utilities** | Axios, date-fns, dotenv |
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Ravikumar-2016/SkyNow.git
+cd SkyNow
+````
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Configure API keys
+
+Create a file named **.env.local** in the root directory and add:
+
+```bash
+NEXT_PUBLIC_WEATHER_API_KEY=your_openweather_api_key
+NEXT_PUBLIC_WEATHERCOM_API_KEY=your_weathercom_api_key
+```
+
+> You can get your API keys from [OpenWeatherMap](https://openweathermap.org/api) and [Weather.com Developer Portal](https://weather.com/swagger-docs/ui/sun/v3/sunV3AlertsWeather).
+
+### 4️⃣ Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Folder Structure
 
-## Learn More
+```
+SkyNow/
+ ┣ public/
+ ┣ src/
+ ┃ ┣ app/
+ ┃ ┃ ┣ api/
+ ┃ ┃ ┃ ┗ forecast/
+ ┃ ┃ ┃ ┃ ┗ route.ts
+ ┃ ┃ ┣ weather/
+ ┃ ┃ ┃ ┗ page.tsx
+ ┃ ┃ ┣ layout.tsx
+ ┃ ┃ ┗ globals.css
+ ┃ ┣ components/
+ ┃ ┃ ┗ header.tsx
+ ┃ ┗ lib/
+ ┃ ┃ ┗ utils.ts
+ ┣ .env.local
+ ┣ package.json
+ ┣ README.md
+ ┗ tsconfig.json
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 Example
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Search by City:**
+Type “Delhi”, “London”, or “New York” to view live forecasts.
+SkyNow displays:
 
-## Deploy on Vercel
+* Current temperature & conditions
+* Feels-like temperature
+* Sunrise/Sunset
+* Hourly & 5-day forecast
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💡 Future Enhancements
+
+* 🌍 Multi-language support
+* 🧠 AI-based forecast insights
+* 📱 Progressive Web App (PWA) support
+* ⚙️ Dark/Light mode toggle
+
+---
+
+<p align="center">
+  <b>Stay Ahead of the Weather — With SkyNow 🌦️</b>
+</p>
