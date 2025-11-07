@@ -127,7 +127,6 @@ SkyNow displays:
 * 🌍 Multi-language support
 * 🧠 AI-based forecast insights
 * 📱 Progressive Web App (PWA) support
-* ⚙️ Dark/Light mode toggle
 
 ---
 
