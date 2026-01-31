@@ -76,8 +76,10 @@ const getMockWeatherData = (cityName: string) => {
   return mockData
 }
 
-const WEATHER_API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY
-const OPENWEATHER_API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY
+// API keys should be server-side only (no NEXT_PUBLIC_ prefix for security)
+// Falls back to NEXT_PUBLIC_ variants for backward compatibility
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY || process.env.NEXT_PUBLIC_WEATHER_API_KEY
+const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY || process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY
 
 interface WeatherCondition {
   text: string

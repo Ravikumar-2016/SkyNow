@@ -1,6 +1,6 @@
 "use client"
 
-import { Sun, CloudRain,Search } from "lucide-react"
+import { Sun, CloudRain, Search } from "lucide-react"
 
 export default function Header() {
 
